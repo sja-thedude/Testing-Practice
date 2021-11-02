@@ -84,7 +84,7 @@ describe('division', () => {
     });
 
     test('80 / 6 must equal 13.333333333333334', () => {
-      expect(calculator.divide(80, 6)).toBe(13.333333333333334);
+      expect(calculator.divide(80, 6)).toBeLessThan(14);
     });
 
     test('40 / 5 must equal 8', () => {
