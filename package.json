@@ -1,15 +1,19 @@
 {
-  "name": "webpack",
+  "name": "testing-practice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practical tests for JavaScript functions using the Jest library following the AAA pattern to make your tests easier for other developers to read and understand. This also uses the TDD approach in practice.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sja-thedude/testing-practice.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "SJA",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.4.0",
