@@ -1,26 +1,26 @@
-const lib = require('./src/index');
+const lib = require('./src/script');
 const calculator = require('./src/calculator');
 const stringLength = lib.stringLength;
 const reverseString = lib.reverseString;
 const capitalize = lib.capitalize;
 
-test('Length of world to equal 5', () => {
+test('length of world to equal 5', () => {
     expect(stringLength('world')).toBe(5);
 });
 
-test('Count is Greater than 1 but not more than 10', () => {
+test('count is Greater than 1 but not more than 10', () => {
     expect(stringLength('wonderful')).toBeGreaterThan(0);
     expect(stringLength('java')).toBeLessThanOrEqual(10);
     expect(() => stringLength('')).toThrow(Error);
     expect(() => stringLength('cosmopolitan')).toThrow(Error);
 });
 
-test('String is Reversed', () => {
+test('string is reversed', () => {
     expect(reverseString('world')).toBe('dlrow');
     expect(reverseString('I am SJA')).toBe('AJS ma I');
 });
 
-describe('Addition', () => {
+describe('addition', () => {
     test('5 + 5 must equal 10', () => {
       expect(calculator.add(5, 5)).toBe(10);
     });
@@ -38,7 +38,7 @@ describe('Addition', () => {
     });
 });
 
-describe('Subtraction', () => {
+describe('subtraction', () => {
     test('1 - 6 must equal -5', () => {
       expect(calculator.subtract(1, 6)).toBe(-5);
     });
@@ -56,7 +56,7 @@ describe('Subtraction', () => {
     });
 });
 
-describe('Multiplication', () => {
+describe('multiplication', () => {
   test('44 * 2 must equal 88', () => {
     expect(calculator.multiply(44, 2)).toBe(88);
   });
@@ -74,7 +74,7 @@ describe('Multiplication', () => {
   });
 });
 
-describe('Division', () => {
+describe('division', () => {
     test('20 / 2 must equal 10', () => {
       expect(calculator.divide(20, 2)).toBe(10);
     });
@@ -83,8 +83,8 @@ describe('Division', () => {
       expect(calculator.divide(21, 3)).toBe(7);
     });
 
-    test('80 / 6 must equal 13.3', () => {
-      expect(calculator.divide(80, 6)).toBe(13.3);
+    test('80 / 6 must equal 13.333333333333334', () => {
+      expect(calculator.divide(80, 6)).toBe(13.333333333333334);
     });
 
     test('40 / 5 must equal 8', () => {
